@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script type="text/javascript">
+      // Redirige a index.html y mantiene la ruta
+      var path = window.location.pathname.replace("/react-recipe-app", "");
+      window.location.replace(
+        "/react-recipe-app/?redirect=" +
+          path +
+          window.location.search +
+          window.location.hash
+      );
+    </script>
+  </head>
+  <body></body>
+</html>
